@@ -15,11 +15,10 @@ public  class  EtrRepetitive {
             Sistema . fuera . println ( " Ingrese el valor en la posición " + contador + " : " );
             numeros = teclado . nextDouble ();
             sumaNumeros = sumaNumeros + numeros;
-            contador ++ ;
+            contador ++ ; // contador = contador + 1;
         }
         Sistema . fuera . println ( " La suma de los 10 números es: " + sumaNumeros);
     }
-
     public  static  void  suma10NumerosHacerMientras () {
         // Variables de Daclarar
         int contador = 1 ;
@@ -46,10 +45,35 @@ public  class  EtrRepetitive {
         Sistema . fuera . println ( " La suma de los 10 números es: " + sumaNumeros);
     }        
 
-    public  static  void  main ( String [] args ) {
-        Sistema . fuera . println ( "¡¡ Holas Mundo !! " );
-        // suma10NumerosMientras ();
-        // suma10NumerosHacerMientras ();
-        suma10NumerosPara ();
+    public  static  void  menuMain () {
+        int opcionAlg = 0 ;
+        String mensaje = " Seleccione el algortimo que desea probar: " +
+        " \ n 1 = suma10NumerosMientras " +
+        " \ n 2 = suma10NumerosHacerMientras " +
+        " \ n 3 = suma10NumerosPara " +
+        " \ n 4 = suma10NumerosMientras " +
+        " \ n 0 = Salir del Programa "
+        ;
+        Sistema . fuera . println (mensaje);
+        opcionAlg = teclado . nextInt ();
+        hacer {                        
+            switch (opcionAlg) {
+                caso  1 : suma10NumerosMientras (); romper ;
+                caso  2 : suma10NumerosHacerMientras () ;; romper ;
+                caso  3 : suma10NumerosPara (); romper ;
+                caso  4 : suma10NumerosMientras (); romper ;
+                predeterminado :  System . fuera . println ( "¡ Opción no existe! " ); romper ;    
+            } 
+            Sistema . fuera . println ( "¿ Desea seguir probando algoritmos ?: " + mensaje);           
+            opcionAlg = teclado . nextInt ();
+        } while (opcionAlg ! = 0 );        
     }
+
+
+    public  static  void  main ( String [] args ) {
+        menuMain ();
+    }
+
+
+
 }

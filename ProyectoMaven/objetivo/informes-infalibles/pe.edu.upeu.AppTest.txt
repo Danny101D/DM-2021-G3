@@ -1,0 +1,4 @@
+-------------------------------------------------- -----------------------------
+Conjunto de prueba: pe.edu.upeu.AppTest
+-------------------------------------------------- -----------------------------
+Pruebas ejecutadas: 1, Fallos: 0, Errores: 0, Omitidos: 0, Tiempo transcurrido: 0,011 seg.

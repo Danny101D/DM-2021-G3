@@ -1,0 +1,34 @@
+<? xml versión = " 1.0 " codificación = " UTF-8 " ?>
+< projectDescription >
+	< nombre > ProyectoMaven </ nombre >
+	< comentario > </ comentario >
+	< proyectos >
+	</ proyectos >
+	< buildSpec >
+		< buildCommand >
+			< nombre > org.eclipse.jdt.core.javabuilder </ nombre >
+			< argumentos >
+			</ argumentos >
+		</ buildCommand >
+		< buildCommand >
+			< nombre > org.eclipse.m2e.core.maven2Builder </ nombre >
+			< argumentos >
+			</ argumentos >
+		</ buildCommand >
+	</ buildSpec >
+	< naturalezas >
+		< naturaleza > org.eclipse.jdt.core.javanature </ naturaleza >
+		< naturaleza > org.eclipse.m2e.core.maven2Naturaleza </ naturaleza >
+	</ naturalezas >
+	< recursos filtrados >
+		< filtro >
+			< id > 1623267562407 </ id >
+			< nombre > </ nombre >
+			< tipo > 30 </ tipo >
+			< comparador >
+				< id > org.eclipse.core.resources.regexFilterMatcher </ id >
+				< argumentos > módulos_nodo | .git | __CREATED_BY_JAVA_LANGUAGE_SERVER __ </ argumentos >
+			</ matcher >
+		</ filtro >
+	</ filterResources >
+</ projectDescription >
